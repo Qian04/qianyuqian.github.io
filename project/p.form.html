@@ -5,6 +5,7 @@ table{
 font-family:Rockwell;
 background-color:LemonChiffon;
 font-size:16pt;
+width: 30%
 }
 caption{
 font-family:Segoe Script;
@@ -13,8 +14,8 @@ font-weight:bold;
 font-size:40pt;
 }
 th,td {
-padding: 30px;
-height: 30%;
+padding: 20px;
+height: 25%;
 }
 td.title{
 font-weight:bold;
@@ -52,10 +53,15 @@ return false;
 
 <center>
 <table><form name=RegisterForm onsubmit="return validateForm()">
-<caption>TOP 1 IS YO</caption><caption><br></caption>
+<caption>TOP 1 IS YO</caption>
 <tr>
 <td class='title'>Name:</td>
 <td><input type=text name=studentname autofocus></td>
+</tr>
+
+<tr>
+<td class='title'>Student ID:</td>
+<td><input type=text name=studentid></td>
 </tr>
 
 <tr>
@@ -68,6 +74,10 @@ return false;
 <td class='title'>Contact Number:</td>
 <td><input type=text name=contactnum></td>
 </tr>
+
+<tr>
+<td class='title'>Email Address:</td>
+<td><input type=email name=studentemail></td></tr>
 
 <tr>
 <td class='title'>
