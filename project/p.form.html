@@ -1,0 +1,106 @@
+<html>
+<head><title>Register Form</title>
+<style>
+table{
+font-family:Rockwell;
+background-color:LemonChiffon;
+font-size:16pt;
+}
+caption{
+font-family:Segoe Script;
+text-align:center;
+font-weight:bold;
+font-size:40pt;
+}
+th,td {
+padding: 30px;
+height: 30%;
+}
+td.title{
+font-weight:bold;
+font-family:Arial;
+font-size:large;
+background-color:#FFE4E1;
+color:#000000;
+}
+</style>
+
+<script>
+function validateForm(){
+let x = document.forms["RegisterForm"]["studentname"].value;
+if (x == ""){
+alert("Please write your name.");
+return false;
+}
+var letters = /^[A-Z]/;
+if (!x.match(letters))
+{
+alert("Please write your name in CAPITAL.");
+return false;
+}
+
+let y = document.forms["RegisterForm"]["contactnum"].value;
+if (y == ""){
+alert("Please enter your phone number.");
+return false;
+}
+}
+</script>
+</head>
+<body topmargin="50">
+
+
+<center>
+<table><form name=RegisterForm onsubmit="return validateForm()">
+<caption>TOP 1 IS YO</caption><caption><br></caption>
+<tr>
+<td class='title'>Name:</td>
+<td><input type=text name=studentname autofocus></td>
+</tr>
+
+<tr>
+<td class='title'>Gender:</th>
+<td><input type=radio name=gender value=Male>Male
+<input type=radio name=gender value=Female>Female</td>
+</tr>
+
+<tr>
+<td class='title'>Contact Number:</td>
+<td><input type=text name=contactnum></td>
+</tr>
+
+<tr>
+<td class='title'>
+Course:
+</td><td>
+<select>
+<option value="O">-List of Courses-</option>
+<optgroup label="Diploma In Computer Science">
+<option value=DCS_S1>Semester 1</option>
+<option value=DCS_S2>Semester 2</option>
+<option value=DCS_S3>Semester 3</option>
+<option value=DCS_S4>Semester 4</option>
+<optgroup label="Diploma In Business">
+<option value=DCS_S1>Semester 1</option>
+<option value=DCS_S2>Semester 2</option>
+<option value=DCS_S3>Semester 3</option>
+<option value=DCS_S4>Semester 4</option>
+<optgroup label="Diploma In Architecture">
+<option value=DCS_S1>Semester 1</option>
+<option value=DCS_S2>Semester 2</option>
+<option value=DCS_S3>Semester 3</option>
+<option value=DCS_S4>Semester 4</option>
+</select>
+</td>
+</tr>
+
+</table>
+<br><br>
+
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+</td></tr><br><br>
+</form>
+</center>  
+</body>
+</html>
