@@ -27,16 +27,15 @@ color:#000000;
 </style>
 
 <script>
+function myFunction(){
+ var z = document.getElementById("studentname");
+z.value = z.value.toUpperCase();
+}
+
 function validateForm(){
 let x = document.forms["RegisterForm"]["studentname"].value;
 if (x == ""){
 alert("Please write your name.");
-return false;
-}
-var letters = /^[A-Z]/;
-if (!x.match(letters))
-{
-alert("Please write your name in CAPITAL.");
 return false;
 }
 
@@ -56,7 +55,7 @@ return false;
 <caption>TOP 1 IS YO</caption>
 <tr>
 <td class='title'>Name:</td>
-<td><input type=text name=studentname autofocus></td>
+<td><input type=text name=studentname id="studentname" onblur="myFunction()" autofocus></td>
 </tr>
 
 <tr>
