@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html>
-<head><title>Excellent Articles</title>
+<head>
 <style>
+
 .p1{
-font-family: Georgia;
-font-size:40px;
-font-style:bold;
+  font-family: Georgia;
+  font-size:40px;
+  font-style:bold;
 }
 .p2{
 font-family: Garamond;
@@ -16,20 +18,38 @@ font-family: Monaco;
 font-size:18px;
 color: Linen;
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 73.5%;
+  height: 0px;
+  background: plum;
+}
+
+.progress-bar {
+  height: 8px;
+  background: yellow;
+  width: 0%;
+}
+
+
 </style>
 </head>
 <body topmargin=50 leftmargin=200 align=justify bgcolor=plum font-color=white>
-<script>
-window.ondblclick = myFunction;
-window.onclick = myfunction;
 
-function myFunction() {
-  document.getElementsByTagName("BODY")[0].style.backgroundColor = "SkyBlue";
-}
-function myfunction() {
-  document.getElementsByTagName("BODY")[0].style.backgroundColor = "plum";
-}
-</script>
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
 
 <div class="p1">Truth is Ruthless</div>
 <div class="p3"> by Abhishek Chakraborty </div><br><br>
@@ -123,6 +143,29 @@ about humans. Truth ignores feelings.<br><br>
 Truth is relentless. Truth is ruthless.<br><br></div>
 <br><br>
 
-<a href="https://qian04.github.io/qianyuqian.github.io/project/p.mainpage.html">Back</a>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<script>
+window.ondblclick = myffunction;
+window.onclick = myfffunction;
+
+function myffunction() {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "SkyBlue";
+}
+function myfffunction() {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "plum";
+}
+</script>
+
 </body>
-</html>
+</html> 
