@@ -1,32 +1,80 @@
 <html>
-<head><title>To Be Human College-English Society</title>
-</head>
-<body topmargin=100 bgcolor=LightSteelBlue align=center
-link="black" vlink="red" alink="yellow">
-<script>
-let d = new Date();
-document.body.innerHTML = "<p1 style= 'color:CornflowerBlue; font-size:220%;'>Now is " + d +"</p1>"
-</script><br><br><br><br><br><br><br><br><br>
-<p1 style= "font-size:350%; color:RoyalBlue"><b>WELCOME</b></p1>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p style="text-align:center;"><p1 style="font-size:550%"><img src="collegelogocut.jpg" height=300 width=300>&nbsp;To Be Human College</p1>
-<br><br><p2 style="font-size:400%">&emsp;&emsp;&emsp;English Society</p2></p>
-<table align=center cellpadding=100px>
-<br><br><br><br><br>
-<tr>
-<th><a href="https://qian04.github.io/qianyuqian.github.io/project/p.about.html" target="_parent"><img src="about.jpg" height=300 width=300><br>About</a></th>
-<th><a href="https://qian04.github.io/qianyuqian.github.io/project/p.announcement.html"><img src="announcement.jpg" height=300 width=300><br>Announcement</a></th>
-</tr><tr>
-<th><a href="https://qian04.github.io/qianyuqian.github.io/project/p.poster.html" target="_blank"><img src="posterr.jpg" height=300 width=300><br><br>Poster - TOP 1 IS YO</a></th>
-<th><a href="https://qian04.github.io/qianyuqian.github.io/project/p.form.html"><img src="form.jpg" height=300 width=300><br><br>Register Form - Top 1 IS YO</a></th>
-</tr><tr>
-<th><a href="https://qian04.github.io/qianyuqian.github.io/project/p.prizes.html"><img src="prizes.jpg" height=300 width=300><br><br>Prizes</a></th>
-<th><a href="https://qian04.github.io/qianyuqian.github.io/project/p.article.html"><img src="article.jpg" height=300 width=300><br><br>Good Article</th>
-</tr>
-<th><a href="https://qian04.github.io/qianyuqian.github.io/project/p.hierarchical.html" target="_top"><img src="hierarchy.jpg" height=300 width=300><br><br>Hierarchy</a></th>
-<th><img src="layoutt.jpg" height=300 width=300><br><br>Layout</th>
-</tr>
+<head><title>To Be Human College - English Society</title>
+<style>
+.p2 {
+    font-size:25px;
+}
 
+.p {
+    font-size:30px;
+}
+
+.topnav {
+    overflow: hidden;
+    color: #333;
+    font-weight: bold;
+}
+
+.topnav a {
+    float: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color:#607D8B;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+</style>
+</head>
+<body align=center>
+<div id="output-text">
+
+<p class="p"><img src="collegelogocut.jpg" height=120 width=120><br> 
+<b>TO BE HUMAN COLLEGE</b></p>
+<p2 class="p2">English Society</p2><br><br>
+<select id="input-font" class="input" onchange="changeFontStyle (this);">
+<option value="Times New Roman" selected="selected">Times New Roman</option>
+<option value="Arial">Arial</option>
+<option value="Cascadia Code">Cascadia Code</option>
+<option value="Cursive">Cursive</option>
+</select><br><br>
+<table align=center width=70%>
+<tr>
+<td align=center><img src="society.jpg" height=450 width=500></td>
+<td width=40%>
+<div class="topnav" id="myTopnav">
+  <a href="https://qian04.github.io/qianyuqian.github.io/project/p.about.html" target="_parent">About</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project/p.announcement.html" target="_blank">Announcement</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project/p.poster.html" target="_blank">Poster</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project/p.form.html" target="_blank">Register</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project/p.prizes.html">Prizes</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project/p.article.html">Article</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project/p.hierarchical.html">Hierarchical</a>
+</div>
+</td></tr>
+</div>
 </table>
+
+
+
+<script>
+var changeFontStyle = function (font) {
+document.getElementById(
+"output-text").style.fontFamily = font.value;
+}
+</script>
+    
 </body>
 </html>
+
