@@ -2,24 +2,32 @@
 <head><title>About</title>
 </head>
 <style>
+
 .font1{
 text-align:justify;
 font-size:30px;
 color:tomato;
 }
 
-#alert {
-display: none;
-background-color: lightpink;
-color: white;
-font-size: 22;
-border: 2px solid;
-position: fixed;
-width: 500px;
-left: 33%;
-top: 15%;
-padding: 5px 7px 7px;
+.p1{
+text-align:center,left;
+font-size:27px;
+color:#CE93D8;
+line-height: 1.5;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+p {
+  text-align: left;
+}
+
 
 button {
   border-radius: 12px;
@@ -50,33 +58,27 @@ Wish our students a happy life, a smooth graduation and a bright future!
 Our club was founded in March 2021, and Michael, the first president, applied to 
 the club teacher and successfully passed. There are only five members in the first 
 group, and 52 in total, which is a great breakthrough.
-<br><br><br><br><br>
+<br><br><br><br><brn>
 </div>
-<br><br><br><br>
-<div id="alert">
-<p> Presidents <br><br>
-1. Johnny Do (2021.03 - 2021.06) <br><br>
-2. Loh Fan Ting (2021.06 - 2021.10) <br><br>
-3. Tee Teng Tang (2021.10 - 2022.03) <br><br>
-4. Roye Rong (2021.03 - 2021.10) <br><br>
-5. Winde Wang (2021.03 - 2021.10) <br><br>
-6. Qin Ke (2022.05 - 2022.10) <br><br>
-7. Poyan (2022.10 - now)</p>
+<button onclick="myFunction()">Successive Presidents</button>
 
-<br><br>
-<button id="close" onclick="closeDialog()"> EXCELLENT! </button>
-</div>
-<button onclick='invokeAlert();'><b> Successive presidents </b></button>
+<div class="text-center">
+<div class="display-inline">
+<p class="p1" id="demo"></p>
 
 <script>
-var alertDiv = document.getElementById("alert");
-function invokeAlert() {
-alertDiv.style.display = "block";
+function myFunction() {
+  document.getElementById("demo").innerHTML = "1. Johnny Do (2021.03 - 2021.06)" +
+  "<br>2. Loh Fan Ting (2021.06 - 2021.10)" +
+  "<br>3. Tee Teng Tang (2021.10 - 2022.03)" +
+  "<br>4. Roye Rong (2021.03 - 2021.10)" +
+  "<br>5. Winde Wang (2021.03 - 2021.10)" +
+  "<br>6. Qin Ke (2022.05 - 2022.10)" +
+  "<br>7. Poyan (2022.10 - now)" ;
 }
-function closeDialog() {
-alertDiv.style.display = "none";
-}
+
 </script>
+</div></div>
 <br><br><br>
 <a href="https://qian04.github.io/qianyuqian.github.io/project/p.mainpage.html">Back</a>
 </body>
