@@ -1,0 +1,115 @@
+<html>
+<head><title>Register Form</title>
+<style>
+table{
+font-family:Rockwell;
+background-color:LemonChiffon;
+font-size:16pt;
+width: 30%
+}
+caption{
+font-family:Segoe Script;
+text-align:center;
+font-weight:bold;
+font-size:40pt;
+}
+th,td {
+padding: 20px;
+height: 25%;
+}
+td.title{
+font-weight:bold;
+font-family:Arial;
+font-size:large;
+background-color:#FFE4E1;
+color:#000000;
+}
+</style>
+
+<script>
+function myFunction(){
+ var z = document.getElementById("studentname");
+z.value = z.value.toUpperCase();
+}
+
+function validateForm(){
+let x = document.forms["RegisterForm"]["studentname"].value;
+if (x == ""){
+alert("Please write your name.");
+return false;
+}
+
+let y = document.forms["RegisterForm"]["contactnum"].value;
+if (y == ""){
+alert("Please enter your phone number.");
+return false;
+}
+}
+</script>
+</head>
+<body topmargin="50">
+
+
+<center>
+<table><form name=RegisterForm onsubmit="return validateForm()">
+<caption>TOP 1 IS YO</caption>
+<tr>
+<td class='title'>Name:</td>
+<td><input type=text name=studentname id="studentname" onblur="myFunction()" autofocus></td>
+</tr>
+
+<tr>
+<td class='title'>Student ID:</td>
+<td><input type=text name=studentid></td>
+</tr>
+
+<tr>
+<td class='title'>Gender:</th>
+<td><input type=radio name=gender value=Male>Male
+<input type=radio name=gender value=Female>Female</td>
+</tr>
+
+<tr>
+<td class='title'>Contact Number:</td>
+<td><input type=text name=contactnum></td>
+</tr>
+
+<tr>
+<td class='title'>Email Address:</td>
+<td><input type=email name=studentemail></td></tr>
+
+<tr>
+<td class='title'>
+Course:
+</td><td>
+<select>
+<option value="O">-List of Courses-</option>
+<optgroup label="Diploma In Computer Science">
+<option value=DCS_S1>Semester 1</option>
+<option value=DCS_S2>Semester 2</option>
+<option value=DCS_S3>Semester 3</option>
+<option value=DCS_S4>Semester 4</option>
+<optgroup label="Diploma In Business">
+<option value=DCS_S1>Semester 1</option>
+<option value=DCS_S2>Semester 2</option>
+<option value=DCS_S3>Semester 3</option>
+<option value=DCS_S4>Semester 4</option>
+<optgroup label="Diploma In Architecture">
+<option value=DCS_S1>Semester 1</option>
+<option value=DCS_S2>Semester 2</option>
+<option value=DCS_S3>Semester 3</option>
+<option value=DCS_S4>Semester 4</option>
+</select>
+</td>
+</tr>
+
+</table>
+<br><br>
+
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+</td></tr><br><br>
+</form>
+</center>  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+<head><title>To Be Human College - English Society</title>
+<style>
+.p2 {
+    font-size:25px;
+}
+
+.p {
+    font-size:30px;
+}
+
+.topnav {
+    overflow: hidden;
+    color: #333;
+    font-weight: bold;
+}
+
+.topnav a {
+    float: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color:#607D8B;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+</style>
+</head>
+<body align=center>
+<div id="output-text">
+
+<p class="p"><img src="collegelogocut.jpg" height=120 width=120><br> 
+<b>TO BE HUMAN COLLEGE</b></p>
+<p2 class="p2">English Society</p2><br><br>
+<select id="input-font" class="input" onchange="changeFontStyle (this);">
+<option value="Times New Roman" selected="selected">Times New Roman</option>
+<option value="Arial">Arial</option>
+<option value="Cascadia Code">Cascadia Code</option>
+<option value="Cursive">Cursive</option>
+</select><br><br>
+<table align=center width=70%>
+<tr>
+<td align=center><img src="society.jpg" height=450 width=500></td>
+<td width=40%>
+<div class="topnav" id="myTopnav">
+  <a href="https://qian04.github.io/qianyuqian.github.io/project1/pp.about.html" target="_parent">About</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project1/pp.announcement.html" target="_blank">Announcement</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project1/pp.poster.html" target="_blank">Poster</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project1/pp.form.html" target="_blank">Register</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project1/pp.prizes.html">Prizes</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project1/pp.article.html">Article</a>
+  <a href="https://qian04.github.io/qianyuqian.github.io/project1/pp.hierarchical.html">Hierarchical</a>
+</div>
+</td></tr>
+</div>
+</table>
+
+
+
+<script>
+var changeFontStyle = function (font) {
+document.getElementById(
+"output-text").style.fontFamily = font.value;
+}
+</script>
+    
+</body>
+</html>
+
