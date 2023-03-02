@@ -1,0 +1,85 @@
+<html>
+<title>Quiz 3</title>
+<link rel="stylesheet" href="Lim Qian Yu_DCS2209228.css">
+
+<script>
+function validateForm(){
+let x = document.forms["CourseSurvey"]["suggestions"].value;
+if (x == ""){
+alert("Please give some suggestions.");
+return false;
+}
+}
+
+</script>
+</head>
+
+<body>
+
+<div class="main">
+<table align=center>
+<caption>DCS3003 Website Design Course Survey</caption><br>
+<caption><br></caption> <caption><br></caption>
+<form name=CourseSurvey onsubmit="return validateForm()">
+<tr><td colspan=7><div class="font3">Personal detail<br></div></td></tr>
+
+<tr><td><div class:"font1">Student ID</div></td>
+<td><div class:"font1">:</div></td>
+<td><input type=text name=stud_id></td>
+<td>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+<td><div class:"font1">Student Name</div></td>
+<td><div class:"font1">:</div></td>
+<td><input type=text name=stud_name></td></tr>
+
+<tr><td><div class:"font1">Course</div></td>
+<td><div class:"font1">:</div></td>
+<td><input type=text name=course></td>
+<td></td>
+<td><div class:"font1">IC No.</div></td>
+<td><div class:"font1">:</div></td>
+<td><input type=text name=icn></td></tr>
+
+<td><div class:"font1">Email address</div></td>
+<td><div class:"font1">:</div></td>
+<td><input type=email name=email></td>
+<td></td>
+<td><div class:"font1">D.O.B</div></td>
+<td><div class:"font1">:</div></td>
+<td><input type=date name=dobs></td></tr>
+</table>
+
+<table align=center>
+<tr><td colspan=3><div class="font3">Questions<br></div></td></tr>
+<tr><td colspan=3><div class="font4">Please answer all question<br></div></td></tr>
+<br><br><br>
+<tr><td><div class="font2">1) Have you grasped the content of the Website Design so far?</td>
+<td></td>
+<td><br><input type="radio" name=grasped_content value=Y>YES<br>
+<input type="radio" name=grasped_content value=N>NO<br></td></tr>
+
+<tr><td><div class="font2">2) Can you now create a simple but interactive website?</td>
+<td></td>
+<td><br><br><input type="radio" name=create_website value=Y>YES<br>
+<input type="radio" name=create_website value=N>NO<br></td></tr>
+
+<tr><td><div class="font2">3) What have you learned so far?</td>
+<td></td>
+<td><br><br><input type=checkbox name=learn value=Knowledge>Knowledge <br>                   
+<input type=checkbox name=learn value=Practical Skills>Practical Skills <br>
+<input type=checkbox name=learn value=Problem Solving>Problem Solving <br>
+<input type=checkbox name=learn value=Self-Exploration Skills>Self-Exploration Skills <br>
+</td></tr>
+
+<tr><td colspan=3><br><br><div class="font2">4) Wish items / suggestions<div class="font4">*</div></td>
+<td></td></tr>
+<tr><td colspan=3><textarea rows=3 cols=100 name=suggestions></textarea></td>
+</table>
+<br><br><br><br>
+<input type=reset value=Reset> &ensp;&ensp;&ensp;&ensp;&ensp;
+<input type=submit value=Submit>
+
+</div></form>
+</div>
+
+</body>
+</html>

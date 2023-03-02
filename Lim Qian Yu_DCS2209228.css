@@ -1,0 +1,13 @@
+div.main{text-align:center}
+div.font1{font-weight:bold;font-family:Arial;}
+div.font2{font-family:Arial;}
+div.font3{font-family:Arial; font-weight:bold; color:blue; text-decoration:underline;}
+div.font4{font-family:Arial; font-weight:bold; color:red;}
+
+caption{font-family:Arial; font-weight:bold; font-size:large}
+table,td{padding:5px}
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  align:center
+}
