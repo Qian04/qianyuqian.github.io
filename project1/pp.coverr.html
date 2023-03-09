@@ -1,6 +1,6 @@
 <html>
 <head><title>TO BE HUMAN COLLEGE</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body, html {
   height: 100%;
@@ -47,14 +47,71 @@ body, html {
   transform: translateY(4px);
 }
 
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #EC7063;
+  --color-2: #AF7AC5;
+  --color-3: #48C9B0;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #F4D03F;
+  --color-3: #AED6F1;
+}
+
+.title-word-3 {
+  --color-1: #ECF0F1;
+  --color-2: #E4A9A8;
+  --color-3: #AF7AC5;
+}
+
+.title-word-4 {
+  --color-1: #85C1E9;
+  --color-2: #DF8453;
+  --color-3: #F7DC6F;
+}
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 74vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 790;
+  font-size: 4vw;
+  text-transform: uppercase;
+}
 </style>
 </head>
 <body>
-
 <div class="hero-image">
+<div class="container">
+  <h2 class="title">
+    <span class="title-word title-word-1">TO</span>
+    <span class="title-word title-word-2">BE</span>
+    <span class="title-word title-word-3">HUMAN</span>
+    <span class="title-word title-word-4">COLLEGE</span>
+  </h2>
+</div> 
+<br><br>
   <div class="hero-text">
-    <h1 style="font-size:4vw">TO BE HUMAN COLLEGE</h1>
-    <p style="font-size:2vw">Welcome to English Society Website</p><br><br><br><br>
+    <p style="font-size:2vw"><br><br><br>Welcome to English Society Website</p><br><br><br><br>
     <button class="button"><a href="https://qian04.github.io/qianyuqian.github.io/project1/pp.mainpage.html">Let's Go!</a></button>
 </div>
 </div>
