@@ -1,0 +1,151 @@
+<html>
+<head><title>Add New Book</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+td {
+width: 10;
+}
+
+th, td {
+padding: 10px;
+}
+
+caption {
+font-family: Calibri;
+text-align: center;
+font-weight: bold;
+font-size: 30pt;
+}
+
+.checkbox-item {
+width: 33.333%;
+float: left;
+margin-bottom: 10px;
+}
+
+.ratio-item {
+width: 25%;
+float: left;
+}
+
+td.title {
+font-weight: bold;
+font-family: Arial;
+font-size: 15;
+background-color: #FCC3E3;
+}
+
+td.content {
+background-color: #FFDFF1;
+}
+</style>
+</head>
+
+<body topmargin="50"> <center>
+<table width = "40%" align = center> <form>
+<caption> Add New Book </caption> 
+
+<tr>
+<td class = "title">Title: </td>
+<td class = "content"><input type = text name = bookname placeholder = "Diary of BangBang" size = 60></td>
+</tr>
+<tr>
+<td class = "title">Author: </td>
+<td class = "content"><input type = text name = author placeholder = "XuHeng Chen" size = 60></td>
+</tr>
+<tr>
+<td class = "title">No.IBSN: </td>
+<td class = "content"><input type = text name = ibsn placeholder = 9787541166808 size = 60></td>
+</tr>
+<tr>
+<td class = "title">Publisher: </td>
+<td class = "content"><input type = text name = publisher placeholder = "Dewan Bahasa dan Pustaka" size = 60></td>
+</tr>
+<tr>
+<td class = "title">Category / Subject: </td>
+<td class="content">
+<div class="checkbox-item">
+<input type="checkbox" name="category" value="Fiction"> Fiction</div>
+<div class="checkbox-item">
+<input type="checkbox" name="category" value="Non-Fiction"> Non-Fiction</div>
+<div class="checkbox-item">
+<input type="checkbox" name="category" value="Mystery"> Mystery</div>
+<div class="checkbox-item">
+<input type="checkbox" name="category" value="Romance"> Romance</div>
+<div class="checkbox-item">
+<input type="checkbox" name="category" value="Science Fiction"> Science Fiction</div>
+<div class="checkbox-item">
+<input type="checkbox" name="category" value="Fantasy"> Fantasy</div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Biograghy> Biography </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = History> History </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Travel> Travel </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Horror> Horror </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Thriller> Thriller </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Science> Science </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Philosophy> Philosophy </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Psychology> Psychology </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Religion> Religion </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Business> Business </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Cooking> Cooking </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = YoungAdult> Young Adult </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Art> Art </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Music> Music </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Sports> Sports </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Technology> Technology </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Health&Fitness> Health & Fitness </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Children'sLiterature> Children's Literature </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Education> Education </div>
+<div class = "checkbox-item">
+<input type = checkbox name = category value = Others> Others </div> </td>  
+</tr>
+<tr>
+<td class = "title">Price: </td>
+<td class = "content"><input type = text name = price value = "RM " size = 8></td>
+</tr>
+<tr>
+<td class = "title">Cover Image: </td>
+<td class = "content"><input type = file name = coverimg size = 60></td>
+</tr>
+<tr>
+<td class = "title">Synopsis: </td>
+<td class = "content"><textarea rows = 10 cols = 57 name = summary></textarea></td>
+</tr>
+<tr>
+<td class = "title">Inventory Quantity: </td>
+<td class = "content"><input type = number name = inventqty min = 0 placeholder = 1 step = 1 style = "width: 90px;"></td>
+</tr>
+<tr>
+<td class = "title">Status: </td>
+<td class = "content">
+<div class="ratio-item"><input type = radio name = status value = Rent> Rent </div>
+<div class="ratio-item"><input type = radio name = status value = Sale> Sale </div>
+<div class="ratio-item"><input type = radio name = status value = Rent & Sale> Rent & Sale </div></td>
+</tr>
+</table>
+<br><br>
+<input type = submit value = Submit>
+<input type = reset value = Reset>
+</form>
+</body>
+
+</html>
