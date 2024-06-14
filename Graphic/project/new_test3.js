@@ -26,6 +26,7 @@ let objects = [
 let dish = { x: 990, y: 460, width: 180, height: 130 };
 
 let waterCopy;
+let isWaterCleared = false;
 
 function preload() {
     firstPageBg = loadImage('img/start.png'); 
@@ -201,26 +202,34 @@ function mouseDragged() {
 function clearWaterUnderRag() {
     if (!waterCopy) return;
 
-    let startX = (ragX - 160) * (water.width / waterCopy.width); // 转换为 water 的坐标系
-    let startY = (ragY - 40) * (water.height / waterCopy.height);  // 转换为 water 的坐标系
+    let startX = (ragX - 160) * (water.width / waterCopy.width); // Convert to water's coordinate system
+    let startY = (ragY - 40) * (water.height / waterCopy.height); // Convert to water's coordinate system
     let ragWidthInWater = ragWidth * (water.width / waterCopy.width);
     let ragHeightInWater = ragHeight * (water.height / waterCopy.height);
 
     waterCopy.loadPixels();
+    let waterCleared = true; // Assume water is cleared until proven otherwise
+
     for (let y = 0; y < ragHeightInWater; y++) {
         for (let x = 0; x < ragWidthInWater; x++) {
             let px = startX + x;
             let py = startY + y;
             if (px >= 0 && px < waterCopy.width && py >= 0 && py < waterCopy.height) {
                 let index = 4 * (py * waterCopy.width + px);
-                waterCopy.pixels[index + 3] = 0; // 设置 alpha 通道为0
+                if (waterCopy.pixels[index + 3] > 0) {
+                    waterCleared = false; // Found non-transparent pixel, water not cleared
+                    break;
+                }
             }
         }
+        if (!waterCleared) break;
     }
     waterCopy.updatePixels();
 
-    if (isWaterCleared) {
-        currentPage = 5; // 如果水已经被完全清除，则跳转到第五页
+    if (waterCleared) {
+        isWaterCleared = true; // Set the flag indicating water is completely cleared
+    } else {
+        isWaterCleared = false; // Reset the flag if water is not completely cleared
     }
 }
 
