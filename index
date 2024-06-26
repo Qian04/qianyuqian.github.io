@@ -1,6 +1,6 @@
 <html>
 <title>Quiz 3</title>
-<link rel="stylesheet" href="Lim Qian Yu_DCS2209228.css">
+<link rel="stylesheet" href="sketch.css">
 
 <script>
 function validateForm(){
