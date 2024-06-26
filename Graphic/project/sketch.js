@@ -262,22 +262,6 @@ function setup() {
     playMusic();
 }
 
-function drawGrid() {
-    stroke(200);
-    fill(120);
-    textSize(20);
-
-    for(let x = 0; x < width; x += 40) {
-        line(x, 0, x, height);
-        text(x, x + 1, 12);
-    }
-
-    for(let y = 0; y < width; y += 40) {
-        line(0, y, width, y);
-        text(y, 1, y + 12);
-    }
-}
-
 function draw() {
 
     if (currentPage === 1) {
