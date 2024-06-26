@@ -8,7 +8,7 @@
     
     <script language = "javascript" type = "text/javascript" src = "libraries/matter.js"></script>
    
-    <script src="Lim Qian Yu_DCS2209228_Individual Project.js" defer type="text/javascript"></script>
+    <script src="sketch.js" defer type="text/javascript"></script>
 
     <audio id="backgroundMusic" src="Playground Fun.mp3" loop></audio>
     
