@@ -459,7 +459,7 @@ function draw() {
         image(mute, 1158, 12, 110, 100);
     }
 
-    drawGrid();
+    // drawGrid();
 }
 
 function resetObjectsToDefaultPosition() {
