@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    background-color: #f8b6c3;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    transition: 3.0s;
+}
+    
+    .navbar ul {
+    margin-left: 815px;
+    margin-top: 20px;
+    }
+    
+    .navbar ul li {
+    display: inline-block;
+    }
+    
+    .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight:bold;
+    padding: 10px;
+    }
+    
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+.promo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.poster {
+    width: 60%;
+    text-align: center;
+}
+
+.poster img {
+    width: 100%;
+    max-width: 600px;
+    border: 5px solid #f8b6c3; /* Change the color and width as desired */
+    padding: 10px; /* Optional: add some padding for spacing between the image and the border */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.promo-text {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-ad {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #f8b6c3;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+.info-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    margin-top: 0;
+}
+
+.toggle-header {
+    background-color: #f7f7f7;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+#counterfeit-arrow, #market-saturation-arrow {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-content {
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-us-section {
+    border: 2px solid #f8b6c3;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-section h2 {
+    margin-top: 0;
+    color: #f8b6c3;
+    text-align: center;
+}
+
+.about-us-section p {
+    text-align: justify;
+    color: #333;
+}
+
+.business-model-section {
+    border: 2px solid #f8b6c3;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.business-model-section h2 {
+    margin-top: 0;
+    color: #f8b6c3;
+    text-align: center;
+}
+
+.business-model-section h3 {
+    color: #f8b6c3;
+}
+
+.business-model-section p {
+    text-align: justify;
+    color: #333;
+}
+
+.department-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.department-table th, .department-table td {
+    border: 2px solid #f8b6c3;
+    padding: 10px;
+    text-align: left;
+}
+
+.department-table th {
+    background-color: #f8b6c3;
+    color: #fff;
+}
+
+.department-table td ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.department-table td ul li {
+    margin-bottom: 5px;
+}
+
+.organization-chart-section {
+    border: 2px solid #f8b6c3;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.organization-chart-section h3 {
+    color: #f8b6c3;
+    margin-top: 0;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.chart-container img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #f8b6c3;
+    border-radius: 10px;
+}
